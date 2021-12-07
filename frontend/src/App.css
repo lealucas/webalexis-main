@@ -1,0 +1,351 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.header{
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  padding: 1.2em;
+}
+
+.dashname{
+  color: #000080    ;
+  font-family: The Quick Brown Fox Jumps Over The Lazy Dog;
+}
+.footer{
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-size: 0,5em;
+  background-color: darkslategrey;
+}
+.dashboard{
+  display: flex;
+  justify-content: center;
+  background-color: black;
+}
+
+.btn-welcome {
+  border: 2px solid green;
+  color: green;
+  padding: 12px 25px;
+  border-radius: 5px;
+  background-color: transparent;
+  font-weight: normal;
+  font-size: 19px;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 150px;
+}
+
+.btn-welcome:hover {
+  border: 2px solid green;
+  color: var(--red-color);
+  background-color: green;
+}
+
+/*
+
+.container-fluid{
+  height: 37.5em;
+}
+
+
+.row{
+  height: 18.75em;
+}
+
+.test1{
+  background-color:blue;
+  width: 20.8125em;
+  padding: 7em;
+}
+.test11{
+
+  background-color:green;
+  width: 6.25em;
+  height: 6.25em;
+
+}
+
+.test2{
+  background-color:white;
+  width: 20.8125em;
+}
+
+.test21{
+  background-color:green;
+  width: 6.25em;
+}
+
+.test3{
+  background-color:red;
+  width: 20.8125em;
+}
+
+.test31{
+  background-color:green;
+  width: 6.25em;
+}
+
+.test4{
+  background-color:grey;
+  width: 20.8125em;
+}
+
+.test41{
+  background-color:green;
+  width: 6.25em;
+}
+
+.test5{
+  background-color:yellow;
+  width: 20.8125em;
+}
+.test51{
+  background-color:green;
+  width: 6.25em;
+}
+.test6{
+  background-color:brown;
+  width: 20.8125em;
+}
+.test61{
+  background-color:green;
+  width: 6.25em;
+}
+*/
+.Accueil{
+  display: flex;
+  overflow: auto;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.supAvion{
+  display: flex;
+  overflow: auto;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.widget{
+  background-color: #3fad5d;
+  color : white;
+  width: 45%;
+  height: auto;
+  padding: 2px;
+  margin: 20px;
+  border-radius: 10px;
+
+}
+
+.widget1{
+  background-color: #3fad5d;
+  color : white;
+  width: 45%;
+  height: auto;
+  padding: 2px;
+  margin: 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  opacity: 0.9;
+
+}
+
+.jesersarien{
+  border-radius: 10px;
+}
+
+.temps{
+border-width: 2px;
+border-bottom: dotted;
+border-color: grey;
+}
+
+.heure{
+  border-width: 2px;
+  border-left: dotted;
+  border-bottom: dotted;
+  border-color: grey;
+}
+
+.widget2{
+  background-color: #3fad5d;
+  color : white;
+  width: 45%;
+  height: auto;
+  padding: 2px;
+  margin: 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  /*background-image: url(images/background_widget2.jpg);*/
+
+}
+.fondwid{
+  background-image: url(images/background_widget2.jpg);
+  opacity: 10;
+  padding: 0px;
+  margin: 0px;
+  border-radius: 10px;
+  width: 100%;
+  height: 101%;
+}
+
+.widget3{
+  background-color: grey  ;
+  color : white;
+  width: 100%;
+  height: auto;
+  padding: 2px;
+  margin: 20px;
+  border-radius: 10px;
+
+}
+
+.monboutton{
+  background-color: red;
+  color: black;
+  border-radius: 10px;
+}
+
+.widget4{
+  background-color: #3fad5d;
+  color : white;
+  width: 45%;
+  height: auto;
+  padding: 2px;
+  margin: 20px;
+  border-radius: 10px;
+
+}
+
+.widget5{
+  background-color: #3fad5d;
+  color : white;
+  width: 100%;
+  height: auto;
+  padding: 2px;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+
+.borduredroite{
+border-right: solid;
+border-color: grey;
+border-width: 2px;
+
+}
+
+
+.bordurebas{
+border-bottom: solid;
+border-color: grey;
+border-width: 2px;
+
+}
+
+.barredubas{
+  color: green;
+
+}
+.depart{
+border-right: dotted;
+border-color: grey;
+border-width: 2px;
+}
+
+.avion1{
+  animation-duration: 6s;
+  animation-name: clignoter;
+  animation-iteration-count: infinite;
+  transition: none;
+
+}
+.avion2{
+  animation-duration: 6s;
+  animation-delay: 3s;
+  animation-name: clignoter;
+  animation-iteration-count: infinite;
+  transition: none;
+
+}
+
+.clignotement{
+  color: red;
+  animation-duration: 2s;
+  animation-name: clignoter;
+  animation-iteration-count: infinite;
+  transition: none;
+}
+@keyframes clignoter {
+  0%   { opacity:1; }
+  40%   {opacity:0; }
+  100% { opacity:1; }
+}
+
+.rechercherVille{
+color: white;
+
+}
+
+.barrederecherche{
+  color: white;
+  width: 300px;
+  height: auto;
+  margin: 5px;
+  padding-bottom: 5px;
+
+}
+
+
+.tableau{
+  background-color: #87CEEB ;
+   width: 100;
+   border-radius: 10px;
+   margin-left: 15px;
+
+}
+.weather-icon {
+  width: 100px;
+}
+
+#today-forecast-more-info {
+  margin: 0px;
+}
+
+@media screen and (min-width: 425px) {
+  .button-load-forecast {
+    width: 50% !important;
+    margin: auto;
+  }
+}
+
