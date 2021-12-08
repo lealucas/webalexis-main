@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import InputGroup from 'react-bootstrap/InputGroup';
 import FormControl from 'react-bootstrap/FormControl';
 import Button from 'react-bootstrap/Button';
-import airFrance from '../images/airFrance.png';
+import EasyJet from '../images/EasyJet.png';
 import airplane from '../images/airplane.png';
 import Axios from 'axios';
 
@@ -37,8 +37,6 @@ class Widget6 extends React.Component
             .then(async reponse => {
                 const data = await reponse.data;
                 console.log(data)
-                alert(data);
-                alert(data[0]);
                 await this.setState({
                     billet: data[0]
                 })
@@ -74,13 +72,16 @@ class Widget6 extends React.Component
     render()
     {
         return(
-            <div className="widget5" onLoad={this.getBillet}>
+            <div className="widget6" onLoad={this.getBillet}>
                 &nbsp;
                 <div className="row ">
                     <div className="supAvion col-4" >
-                        <img src={airFrance} ></img>
+                        <img className="logoECE" src={EasyJet} ></img>
                     </div>
                     <div className="col-4">
+                        {
+                            console.log(this.state.billet.from)
+                        }
                         <h2> De {this.state.billet.from}</h2>
                     </div>
                     <div className="col-4">
@@ -92,7 +93,7 @@ class Widget6 extends React.Component
                             onChange={this.handleChangeBillet}
                             />
                             <InputGroup.Append>
-                            <Button variant="outline-secondary" onClick={this.getBilletWithId}>Rechercher</Button>
+                            <Button variant="dark" onClick={this.getBilletWithId}>Rechercher</Button>
                             </InputGroup.Append>
                         </InputGroup>
                     </div>

@@ -1,3 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html {
+  font-size: 60%;
+  font-family: 'montserrat';
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+@media screen and (max-width: 1300px) {
+  html {
+    font-size: 40%;
+  }  
+}
+
+
 .App {
   text-align: center;
 }
@@ -20,8 +36,19 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(1rem + 2vmin);
   color: white;
+}
+
+.logoECE {
+  width: 20rem;
+}
+
+.titleHeader {
+  font-family: 'Montserrat';
+  font-size: 5rem;
+  font-weight: bold;
+  color: #f3722c;
 }
 
 .App-link {
@@ -31,8 +58,9 @@
 .header{
   display: flex;
   justify-content: center;
+  align-items: center;
   background-color: white;
-  padding: 1.2em;
+  height: 15rem;
 }
 
 .dashname{
@@ -53,22 +81,22 @@
 }
 
 .btn-welcome {
-  border: 2px solid green;
-  color: green;
-  padding: 12px 25px;
-  border-radius: 5px;
+  border: 2px solid #f3722c;
+  color: #f3722c;
+  padding: 1.2rem 2.5rem;
+  border-radius: 0.5rem;
   background-color: transparent;
   font-weight: normal;
-  font-size: 19px;
+  font-size: 1.9rem;
   text-align: center;
   text-decoration: none;
-  margin-top: 150px;
+  margin-top: 15rem;
 }
 
 .btn-welcome:hover {
-  border: 2px solid green;
+  border: 0.2rem solid #f3722c;
   color: var(--red-color);
-  background-color: green;
+  background-color: #f3722c;
 }
 
 /*
@@ -89,7 +117,7 @@
 }
 .test11{
 
-  background-color:green;
+  background-color:#f3722c;
   width: 6.25em;
   height: 6.25em;
 
@@ -101,7 +129,7 @@
 }
 
 .test21{
-  background-color:green;
+  background-color:#f3722c;
   width: 6.25em;
 }
 
@@ -111,7 +139,7 @@
 }
 
 .test31{
-  background-color:green;
+  background-color:#f3722c;
   width: 6.25em;
 }
 
@@ -121,7 +149,7 @@
 }
 
 .test41{
-  background-color:green;
+  background-color:#f3722c;
   width: 6.25em;
 }
 
@@ -130,7 +158,7 @@
   width: 20.8125em;
 }
 .test51{
-  background-color:green;
+  background-color:#f3722c;
   width: 6.25em;
 }
 .test6{
@@ -138,7 +166,7 @@
   width: 20.8125em;
 }
 .test61{
-  background-color:green;
+  background-color:#f3722c;
   width: 6.25em;
 }
 */
@@ -157,54 +185,53 @@
 }
 
 .widget{
-  background-color: #3fad5d;
+  background-color: #f3722c;
   color : white;
   width: 45%;
   height: auto;
-  padding: 2px;
-  margin: 20px;
-  border-radius: 10px;
+  padding: 0.2rem;
+  margin: 2rem;
+  border-radius: 1rem;
 
 }
 
 .widget1{
-  background-color: #3fad5d;
+  background-color: #f3722c;
   color : white;
   width: 45%;
   height: auto;
-  padding: 2px;
-  margin: 20px;
-  border-radius: 10px;
+  padding: 0.2rem;
+  margin: 2rem;
+  border-radius: 1rem;
   font-weight: bold;
-  opacity: 0.9;
 
 }
 
 .jesersarien{
-  border-radius: 10px;
+  border-radius: 1rem;
 }
 
 .temps{
-border-width: 2px;
+border-width: 0.2rem;
 border-bottom: dotted;
 border-color: grey;
 }
 
 .heure{
-  border-width: 2px;
+  border-width: 0.2rem;
   border-left: dotted;
   border-bottom: dotted;
   border-color: grey;
 }
 
 .widget2{
-  background-color: #3fad5d;
+  background-color: #f3722c;
   color : white;
   width: 45%;
   height: auto;
-  padding: 2px;
-  margin: 20px;
-  border-radius: 10px;
+  padding: 0.2rem;
+  margin: 2rem;
+  border-radius: 1rem;
   font-weight: bold;
   /*background-image: url(images/background_widget2.jpg);*/
 
@@ -212,56 +239,126 @@ border-color: grey;
 .fondwid{
   background-image: url(images/background_widget2.jpg);
   opacity: 10;
-  padding: 0px;
-  margin: 0px;
-  border-radius: 10px;
+  padding: 0rem;
+  margin: 0rem;
+  border-radius: 1rem;
   width: 100%;
   height: 101%;
 }
+
+/* -------------------WIDGET 3--------------- */
 
 .widget3{
   background-color: grey  ;
   color : white;
   width: 100%;
   height: auto;
-  padding: 2px;
-  margin: 20px;
-  border-radius: 10px;
+  padding: 0.2rem;
+  margin: 2rem;
+  border-radius: 1rem;
+  padding: 2rem;
 
+}
+
+.imgWidget3 {
+  width: 25rem;
+}
+
+.widget3container {
+  display: flex;
+}
+
+.lineChartWidget4 {
+  width: 10rem;
+  height: 5rem;
 }
 
 .monboutton{
   background-color: red;
   color: black;
-  border-radius: 10px;
+  border-radius: 1rem;
 }
 
 .widget4{
-  background-color: #3fad5d;
+  background-color: #f3722c;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   color : white;
-  width: 45%;
+  width: 50%;
   height: auto;
-  padding: 2px;
-  margin: 20px;
-  border-radius: 10px;
+  border-radius: 1rem;
 
 }
 
+@media screen and (max-width: 1300px) {
+  .widget4 {
+    width: 100%;
+  }
+
+  .widget3 {
+    padding: 0;
+  }
+
+  .logoECE {
+    width: 10rem;
+  }
+  .titleHeader {
+    font-size: 2rem;
+  }
+
+  .widget1 {
+    width: 100%;
+  }
+
+  .widget2 {
+    width: 100%;
+  }
+
+  .btnHeader {
+    padding: 1rem;
+  }
+
+}
+
+
+
+
+
 .widget5{
-  background-color: #3fad5d;
+  background-color: #f3722c;
+  color : white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  padding: 0.2rem;
+  margin: 2rem;
+  border-radius: 1rem;
+}
+
+.widget6{
+  background-color: #f3722c;
   color : white;
   width: 100%;
   height: auto;
-  padding: 2px;
-  margin: 20px;
-  border-radius: 10px;
+  padding: 0.2rem;
+  margin: 2rem;
+  border-radius: 1rem;
+}
+
+.recharts-surface {
+  margin : 0 auto;
 }
 
 
 .borduredroite{
 border-right: solid;
 border-color: grey;
-border-width: 2px;
+border-width: 0.2rem;
 
 }
 
@@ -269,18 +366,41 @@ border-width: 2px;
 .bordurebas{
 border-bottom: solid;
 border-color: grey;
-border-width: 2px;
+border-width: 0.2rem;
 
 }
+
+/* ------------------FOOTER-------------------- */
 
 .barredubas{
-  color: green;
-
+  color: #f3722c;
+  display: flex;
+  justify-content: center;
 }
+
+.columnfooter {
+  height: 15rem;
+}
+
+.cardFooter {
+  width: 100%;
+}
+
+.networks-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logoEasyJet {
+  width: 20rem;
+  margin-top: -5rem;
+}
+
 .depart{
 border-right: dotted;
 border-color: grey;
-border-width: 2px;
+border-width: 0.2rem;
 }
 
 .avion1{
@@ -319,10 +439,10 @@ color: white;
 
 .barrederecherche{
   color: white;
-  width: 300px;
+  width: 30rem;
   height: auto;
-  margin: 5px;
-  padding-bottom: 5px;
+  margin: 0.5rem;
+  padding-bottom: 0.5rem;
 
 }
 
@@ -330,12 +450,12 @@ color: white;
 .tableau{
   background-color: #87CEEB ;
    width: 100;
-   border-radius: 10px;
-   margin-left: 15px;
+   border-radius: 1rem;
+   margin-left: 1.5rem;
 
 }
 .weather-icon {
-  width: 100px;
+  width: 10rem;
 }
 
 #today-forecast-more-info {
@@ -347,5 +467,17 @@ color: white;
     width: 50% !important;
     margin: auto;
   }
+}
+
+@media screen and (max-width: 1300px) {
+  .barredubas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .titleFooter {
+    font-size: 0.8rem;
+  }  
 }
 

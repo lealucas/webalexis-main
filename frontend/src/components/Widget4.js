@@ -22,7 +22,7 @@ const data = [
     name: 'AMAZON', cours_moyen: 3184.787, nombre_d_actions_vendues: 1083, amt: 2000,
   },
   {
-    name: 'MICROSFT', cours_moyen: 213.645, nombre_d_actions_vendues: 11716, amt: 2181,
+    name: 'MICROSOFT', cours_moyen: 213.645, nombre_d_actions_vendues: 11716, amt: 2181,
   }];
 
 class CustomizedLabel extends PureComponent {
@@ -53,12 +53,12 @@ export default class Example extends PureComponent {
   static jsfiddleUrl = 'https://jsfiddle.net/alidingling/5br7g9d6/';
 
   render() {
-    return (
+    return ( 
       <div className="widget4">
-        <h1>COURS DES GAFAM</h1>
+        <h1>COURS DES BIG5</h1>
         <LineChart
-          width={501}
-          height={400}
+          width={325}
+          height={275}
           data={data}
           margin={{
             top: 20, right: 30, left: 20, bottom: 10,
@@ -70,7 +70,7 @@ export default class Example extends PureComponent {
           <Tooltip />
           <Legend />
           <Line type="monotone" dataKey= "nombre_d_actions_vendues" stroke="#FFD044" label={<CustomizedLabel />} />
-          <Line type="monotone" dataKey="cours_moyen" stroke="#ED5844" />
+          <Line type="monotone" dataKey="cours_moyen" stroke="#000" />
         </LineChart>
       </div>
     );

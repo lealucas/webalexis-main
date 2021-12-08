@@ -125,10 +125,10 @@ componentDidMount() {
 
             <div className="widget3">
                 &nbsp;
-                <div className="row container">
+                <div className="row widget3container">
 
                     <div className="col-3">
-                    <a href={!!this.state.articles &&(this.state.articles.articles[this.state.count].url)}><img src={!!this.state.articles &&(this.state.articles.articles[this.state.count].urlToImage)} width="250" height="170"/></a>
+                    <a href={!!this.state.articles &&(this.state.articles.articles[this.state.count].url)}><img className="imgWidget3" src={!!this.state.articles &&(this.state.articles.articles[this.state.count].urlToImage)}/></a>
                     <p><i>Cliquez sur l'image pour voir l'article en entier</i></p>
                     </div>
 
@@ -136,11 +136,8 @@ componentDidMount() {
                         <h4>{!!this.state.articles &&(<>{this.state.articles.articles[this.state.count].title}</>)}</h4>
                         <p>{!!this.state.articles &&(<>{this.state.articles.articles[this.state.count].content}</>)}</p>
                         <p>Publié le  {!!this.state.articles &&(<>{this.state.articles.articles[this.state.count].publishedAt}</>)} par <i>{!!this.state.articles &&(<>{this.state.articles.articles[this.state.count].author}</>)}</i></p>
-                        
                             <div>
-        
-
-                            <Button variant="outline-secondary" onClick={() => this.setState({ count: Math.floor(Math.random() * 15)  })}> Changer d article </Button>
+                                <Button variant="outline-secondary" onClick={() => this.setState({ count: Math.floor(Math.random() * 15)  })}> Changer d'article </Button>
                             </div>
                         <p></p>
                     </div>

@@ -102,7 +102,7 @@ handleSubmit = (e) => {
                             onChange={this.handleChange}
                         />
                         <InputGroup.Append>
-                            <Button variant="success" onClick={this.handleSubmit}>Rechercher</Button>
+                            <Button variant="dark" onClick={this.handleSubmit}>Rechercher</Button>
                         </InputGroup.Append>
                     </InputGroup>  
                     </div>
@@ -127,7 +127,7 @@ handleSubmit = (e) => {
 
                     </div>
                     &nbsp;
-                    <h2>Mardi 15 Décembre 2020</h2>
+                    <h2>Mercredi 8 Décembre 2021</h2>
                 </div>
             </div>
             

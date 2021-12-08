@@ -170,7 +170,7 @@ class Admin extends React.Component
                 <Form >
 
                     <Form.Group controlId="formGridAddressq1">
-                        <Form.Label>Destiation</Form.Label>
+                        <Form.Label>Destination</Form.Label>
                         <Form.Control  onChange={this.handleChangeTo}/>
                     </Form.Group>
 
@@ -220,7 +220,7 @@ class Admin extends React.Component
                         <Form.Control  onChange={this.handleChangeId}/>
                     </Form.Group>
                     <Form.Group controlId="formGridAddressq1">
-                        <Form.Label>Destiation</Form.Label>
+                        <Form.Label>Destination</Form.Label>
                         <Form.Control  onChange={this.handleChangeTo}/>
                     </Form.Group>
 

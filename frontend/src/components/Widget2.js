@@ -943,7 +943,7 @@ class Widget2 extends React.Component
                   />
                 </Col>
               </Form.Row>
-              <Button type="submit" variant="success" className="mb-2" /*onClick={() => convertionMonnaie()}*/>
+              <Button type="submit" variant="dark" className="mb-2" /*onClick={() => convertionMonnaie()}*/>
                 Convertir 
               </Button>
             </Form>

@@ -1,7 +1,7 @@
 
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { BarChart, Bar, XAxis, YAxis, Tooltip, Legend, CartesianGrid } from 'recharts';
+import { BarChart, Bar, XAxis, YAxis, Tooltip, Legend, CartesianGrid, ResponsiveContainer } from 'recharts';
 
 
 // http://api.marketstack.com/v1/timezones?access_key=e90d62516d331558297f38fbdcd62d56
@@ -62,15 +62,15 @@ class Widget5 extends React.Component
             <div className="widget5">
             &nbsp;
                 <h1>Décalage horaire par rapport à l heure GMT {this.state.date.toLocaleTimeString()}</h1>     
-                &nbsp;                      
-                <BarChart width={1000} height={250} data={data}>
+                &nbsp;                   
+                <BarChart width={325} height={200} data={data}>
                 <CartesianGrid strokeDasharray="3 3" />
                 <XAxis dataKey="name" /><YAxis />
                   <Tooltip />
             
                 <Legend />
-                <Bar dataKey="Heure_Retard" fill="#8884d8" />
-                <Bar dataKey="Heure_Avance" fill="#82ca9d" />
+                <Bar dataKey="Heure_Retard" fill="#000" />
+                <Bar dataKey="Heure_Avance" fill="#fff" />
                 </BarChart>
             </div>
         );
